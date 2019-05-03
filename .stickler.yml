@@ -1,5 +1,5 @@
 linters:
-  AllCops:   
+  rubocop: 
     Exclude:     
     - 'db/**/*'     
     - 'config/**/*'     
@@ -8,7 +8,7 @@ linters:
     - 'bin/**/*'
     - 'Gemfile'
     - 'Rakefile'
-  Style/Documentation:
-    Enabled: false
-  Style/FrozenStringLiteralComment:
-    Enabled: false
+    Style/Documentation:
+      Enabled: false
+    Style/FrozenStringLiteralComment:
+      Enabled: false
