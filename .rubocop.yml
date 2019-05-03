@@ -1,0 +1,17 @@
+AllCops:
+ Exclude:
+ — db/schema.rb
+ — db/migrate/**/*
+ — lib/tasks/**/*
+enabled: true
+rubocop_config:
+  Rails:
+    Enabled: true
+  Rails/Present:
+    Enabled: true
+  Layout/InitialIndentation:
+    Enabled: false
+  Layout/TrailingBlankLines:
+    Enabled: false
+  Style/FrozenStringLiteralComment:
+    Enabled: false
