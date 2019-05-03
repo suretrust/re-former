@@ -1,7 +1,9 @@
-class UsersController < ApplicationController
-    def new        
-    end
+# frozen_string_literal: true
 
-    def create        
+class UsersController < ApplicationController
+  def new; end
+
+  def create
+    redirect_to "/"
     end
 end
