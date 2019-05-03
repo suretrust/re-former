@@ -8,6 +8,8 @@ linters:
     - 'bin/**/*'
     - 'Gemfile'
     - 'Rakefile'
+    Metrics/LineLength:
+      Max: 90
     Style/Documentation:
       Enabled: false
     Style/FrozenStringLiteralComment:
