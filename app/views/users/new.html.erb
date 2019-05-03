@@ -1,19 +1,19 @@
 <h1>New user page</h1>
 
-<%= form_tag users_path, method: :post do %>
+<%= form_for @user do |f| %>
     <div>
-        <%= label_tag :email %>
-        <%= text_field_tag :email %>
+        <%= f.label :email %>
+        <%= f.text_field :email, placeholder: ' example@example.com' %>
     </div>
     <div>
-        <%= label_tag :username %>
-        <%= text_field_tag :username %>
+        <%= f.label :username %>
+        <%= f.text_field :username, placeholder: ' Your username here'  %>
     </div>
     <div>
-        <%= label_tag :password %>
-        <%= password_field_tag :password %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
     </div>
     <div>
-        <%= submit_tag "Create new user" %>
+        <%= f.submit "Create new user" %>
     </div>
 <% end %>

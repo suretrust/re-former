@@ -1,9 +1,20 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  def new; end
+  include UsersHelper
+  
+  def new
+    @user = User.new
+  end
 
   def create
-    redirect_to '/'
+    @user = User.new(user_params)
+
+    if @user.save
+        redirect_to new_user_path
+    else
+        render :new
+    end
   end
+  
 end
