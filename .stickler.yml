@@ -1,14 +1,16 @@
 linters:
-  AllCops:   
+  rubocop: 
     Exclude:     
-    - 'db/**/*'     
+    - 'db/*'     
     - 'config/**/*'     
     - 'script/**/*'
     - 'test/**/*'
     - 'bin/**/*'
     - 'Gemfile'
     - 'Rakefile'
-  Style/Documentation:
-    Enabled: false
-  Style/FrozenStringLiteralComment:
-    Enabled: false
+    Metrics/LineLength:
+      Max: 90
+    Style/Documentation:
+      Enabled: false
+    Style/FrozenStringLiteralComment:
+      Enabled: false
