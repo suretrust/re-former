@@ -1,14 +1,15 @@
 linters:
   Rubocop:
-    enabled: true
-    rubocop_config:
-      Rails:
-        Enabled: true
-      Rails/Present:
-        Enabled: true
-      Layout/InitialIndentation:
-        Enabled: false
-      Layout/TrailingBlankLines:
-        Enabled: false
-      Style/FrozenStringLiteralComment:
-        Enabled: false
+    AllCops:   
+      Exclude:     
+      - 'db/**/*'     
+      - 'config/**/*'     
+      - 'script/**/*'
+      - 'test/**/*'
+      - 'bin/**/*'
+      - 'Gemfile'
+      - 'Rakefile'
+    Style/Documentation:
+      Enabled: false
+    Style/FrozenStringLiteralComment:
+      Enabled: false
