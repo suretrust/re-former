@@ -1,0 +1,14 @@
+
+AllCops:   
+  Exclude:     
+    - 'db/**/*'     
+    - 'config/**/*'     
+    - 'script/**/*'
+    - 'test/**/*'
+    - 'bin/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
